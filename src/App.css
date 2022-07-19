@@ -1,11 +1,16 @@
+body {
+  font-family: Roboto, arial, sans-serif;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
   border: 1px solid #74bdcb;
+  background: #2b3e71;
 }
 
 .App h1 {
-  color: #000;
+  color: #ccdd48;
   font-family: Roboto, arial, sans-serif;
   font-size: 24px;
   font-weight: 100;
