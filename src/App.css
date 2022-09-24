@@ -5,14 +5,13 @@ body {
 .App {
   font-family: sans-serif;
   text-align: center;
-  border: 1px solid #74bdcb;
-  background: #2b3e71;
+  border: 1px solid #8f25a7;
+  background: #fbb331;
 }
 
 .App h1 {
-  color: #ccdd48;
-  font-family: Roboto, arial, sans-serif;
-  font-size: 24px;
+  color: #d20fcd;
+  font-size: 30px;
   font-weight: 100;
-  line-height: 29px;
+  line-height: 75px;
 }
