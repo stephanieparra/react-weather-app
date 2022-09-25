@@ -34,9 +34,15 @@ export default function SearchEngine() {
       <input
         type="search"
         placeholder="Enter a city..."
+        className="form-control"
+        autoFocus="on"
         onChange={updateCity}
       />
-      <button type="Submit">Search</button>
+      <input
+        type="submit"
+        value="Search"
+        className="btn btn-primary"
+      />
     </form>
   );
 

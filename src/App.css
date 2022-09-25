@@ -13,6 +13,11 @@
   margin-bottom: 20px;
 }
 
+.App input.form-control {
+  width: 75%;
+}
+
+
 .App h1 {
   color: #d20fcd;
   font-size: 30px;
