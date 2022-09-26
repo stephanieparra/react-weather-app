@@ -30,20 +30,28 @@ export default function SearchEngine() {
   }
 
   let form = (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="search"
-        placeholder="Enter a city..."
-        className="form-control"
-        autoFocus="on"
-        onChange={updateCity}
-      />
-      <input
-        type="submit"
-        value="Search"
-        className="btn btn-primary"
-      />
-    </form>
+    <div className="Weather">
+      <form onSubmit={handleSubmit}>
+        <div className="row">
+          <div className="col-9">
+            <input
+              type="search"
+              placeholder="Enter a city..."
+              className="form-control"
+              autoFocus="on"
+              onChange={updateCity}
+            />
+          </div>
+          <div className="col-3">
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-primary"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
   );
 
   if (loaded) {
