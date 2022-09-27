@@ -1,13 +1,13 @@
 .App {
   font-family: Roboto, arial, sans-serif;
-  text-align: center;
-  border: 1px solid #151E3F;
-  background: #FAFAEF;
+  text-align: ;
+  border: 1px solid #151e3f;
+  background: #fafaef;
   margin: 30px auto;
   max-width: 800px;
   padding: 16px;
   border-radius: 4px;
-  box-shadow: 5px 5px #DC9E82;
+  box-shadow: 5px 5px #dc9e82;
 }
 
 .App form {
@@ -18,9 +18,8 @@
   width: 75%;
 }
 
-
 .App h1 {
-  color: #151E3F;
+  color: #151e3f;
   font-size: 30px;
   font-weight: 100;
   line-height: 75px;
@@ -37,11 +36,11 @@
   font-weight: 100px;
   line-height: 50px;
   list-style: none;
-  color: #151E3F;
+  color: #151e3f;
 }
 
 .App footer {
-  color: #151E3F;
+  color: #151e3f;
 }
 
 .App img {
@@ -51,6 +50,13 @@
 
 .App .temperature {
   font-size: 64px;
-  color:#151E3F;
+  color: #151e3f;
   line-height: 64px;
+}
+
+.App .unit {
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  top: -32px;
 }
