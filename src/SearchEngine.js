@@ -43,11 +43,7 @@ export default function SearchEngine() {
             />
           </div>
           <div className="col-3">
-            <input
-              type="submit"
-              value="Search"
-              className="btn btn-primary"
-            />
+            <input type="submit" value="Search" className="btn btn-primary" />
           </div>
         </div>
       </form>
@@ -58,15 +54,26 @@ export default function SearchEngine() {
     return (
       <div>
         {form}
-        <ul>
-          <li>Temperature: {Math.round(weather.temperature)}C</li>
-          <li>Description: {weather.description}</li>
-          <li>Humidity: {weather.humidity}%</li>
-          <li>Wind: {weather.wind}/km</li>
-          <li>
+        <div className="row">
+          <div className="col-6">
+            <h2>Los Angeles</h2>
+            <ul>
+              <li>Wednesday 7:00</li>
+              <li>Description: {weather.description}</li>
+            </ul>
             <img src={weather.icon} alt={weather.description} />
-          </li>
-        </ul>
+            <span className="temperature">
+              {Math.round(weather.temperature)}
+            </span>
+            <span className="unit">°C</span>
+          </div>
+          <div className="col-6">
+            <ul>
+              <li>Humidity: {weather.humidity}%</li>
+              <li>Wind: {weather.wind}/km</li>
+            </ul>
+          </div>
+        </div>
       </div>
     );
   } else {
