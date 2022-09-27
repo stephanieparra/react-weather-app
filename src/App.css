@@ -1,6 +1,5 @@
 .App {
   font-family: Roboto, arial, sans-serif;
-  text-align: ;
   border: 1px solid #151e3f;
   background: #fafaef;
   margin: 30px auto;
@@ -23,7 +22,7 @@
   font-size: 30px;
   font-weight: 100;
   line-height: 75px;
-  margin: 20px 0 0 0;
+  margin: 0 0 8px 0;
 }
 
 .App ul {
