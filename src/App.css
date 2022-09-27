@@ -43,3 +43,14 @@
 .App footer {
   color: #151E3F;
 }
+
+.App img {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.App .temperature {
+  font-size: 64px;
+  color:#151E3F;
+  line-height: 64px;
+}
