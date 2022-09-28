@@ -26,7 +26,7 @@ export default function SearchEngine(props) {
   }
 
   function handleCityChange(event) {
-  setCity(event.target.value);
+    setCity(event.target.value);
   }
 
   function search() {
@@ -35,30 +35,32 @@ export default function SearchEngine(props) {
     axios.get(apiUrl).then(handleResponse);
   }
 
-
-if (weatherData.ready) {
-  return (
-    <div className="Weather">
-      <form onSubmit={handleSubmit}>
-        <div className="row">
-          <div className="col-9">
-            <input
-              type="search"
-              placeholder="Enter a city..."
-              className="form-control"
-              autoFocus="on"
-              onChange={handleCityChange}
-            />
+  if (weatherData.ready) {
+    return (
+      <div className="Weather">
+        <form onSubmit={handleSubmit}>
+          <div className="row">
+            <div className="col-9">
+              <input
+                type="search"
+                placeholder="Enter a city..."
+                className="form-control"
+                autoFocus="on"
+                onChange={handleCityChange}
+              />
+            </div>
+            <div className="col-3">
+              <input
+                type="submit"
+                value="Search"
+                className="btn btn-primary w-100"
+              />
+            </div>
           </div>
-          <div className="col-3">
-            <input
-              type="submit"
-              value="Search"
-              className="btn btn-primary w-100"
-            />
-          </div>
-        </div>
-      </form>
-    </div>
-  );
+        </form>
+      </div>
+    );
+  } else {
+    return null;
+  }
 }
