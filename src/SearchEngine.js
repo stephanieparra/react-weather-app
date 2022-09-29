@@ -31,7 +31,7 @@ export default function SearchEngine(props) {
 
   function search() {
     const apiKey = "88e64de9fc51e9cca98f8a475dc584f5";
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -61,6 +61,7 @@ export default function SearchEngine(props) {
       </div>
     );
   } else {
+    search();
     return null;
   }
 }
