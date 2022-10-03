@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./App.css";
 
@@ -7,11 +8,12 @@ export default function SearchEngine(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
+    console.log(response.data);
     setWeatherData({
       ready: true,
       city: response.data.name,
       temperature: response.data.main.temp,
-      date: "Wednesday 7:00",
+      date: new Date(response.data.dt * 1000),
       precipitation: response.data.main.precipitation,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -50,7 +52,9 @@ export default function SearchEngine(props) {
               />
               <h1>{weatherData.city}</h1>
               <ul>
-                <li>{weatherData.date}</li>
+                <li>
+                  <FormattedDate date={weatherData.date}/>
+                </li>
                 <li className="text-capitalize">{weatherData.description}</li>
               </ul>
               <div className="clear-fix">
