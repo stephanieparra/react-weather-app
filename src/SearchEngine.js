@@ -49,6 +49,21 @@ export default function SearchEngine(props) {
                 onChange={handleCityChange}
               />
               <h1>{weatherData.city}</h1>
+              <ul>
+                <li>{weatherData.date}</li>
+                <li className="text-capitalize">{weatherData.description}</li>
+              </ul>
+              <div className="clear-fix">
+                <img
+                  src={weatherData.icon}
+                  alt={weatherData.description}
+                  className="float-left"
+                />
+                <span className="temperature">
+                  {Math.round(weatherData.temperature)}
+                </span>
+                <span className="unit">°C</span>
+              </div>
             </div>
             <div className="col-3">
               <input
@@ -56,6 +71,11 @@ export default function SearchEngine(props) {
                 value="Search"
                 className="btn btn-primary w-100"
               />
+              <ul>
+                <li>Precipitation: {weatherData.precipitation}</li>
+                <li>Humidity: {weatherData.humidity}%</li>
+                <li>Wind: {weatherData.wind}/km</li>
+              </ul>
             </div>
           </div>
         </form>
