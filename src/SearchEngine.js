@@ -48,6 +48,7 @@ export default function SearchEngine(props) {
                 autoFocus="on"
                 onChange={handleCityChange}
               />
+              <h1>{weatherData.city}</h1>
             </div>
             <div className="col-3">
               <input
