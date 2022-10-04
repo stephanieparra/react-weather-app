@@ -38,8 +38,9 @@
   color: #151e3f;
 }
 
-.App footer {
+footer {
   color: #151e3f;
+  text-align: center;
 }
 
 .App img {
