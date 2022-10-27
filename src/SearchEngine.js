@@ -31,8 +31,8 @@ export default function SearchEngine(props) {
   }
 
   function search() {
-    const apiKey = "88e64de9fc51e9cca98f8a475dc584f5";
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    const apiKey = "b3388014b013fd3aot7828a2bfbfecfe";
+    const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -59,7 +59,7 @@ export default function SearchEngine(props) {
             </div>
           </div>
         </form>
-        <WeatherInfo data={weatherData}/>
+        <WeatherInfo data={weatherData} />
         <WeatherForecast />
       </div>
     );
