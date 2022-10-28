@@ -11,14 +11,14 @@ export default function SearchEngine(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      coordinates: response.data.coord,
-      city: response.data.name,
-      temperature: response.data.main.temp,
+      coordinates: response.data.coordinates,
+      city: response.data.city,
+      temperature: response.data.temperature.current,
       date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
-      humidity: response.data.main.humidity,
-      icon: response.data.weather[0].icon,
-      description: response.data.weather[0].description,
+      humidity: response.data.temperature.humidity,
+      icon: response.data.condition.icon,
+      description: response.data.condition.description,
     });
   }
 
