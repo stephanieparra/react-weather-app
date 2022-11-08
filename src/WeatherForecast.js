@@ -5,7 +5,7 @@ import axios from "axios";
 
 export default function WeatherForecast(props) {
   function handleResponse(response) {
-    console.log(response.data);
+
   }
 
   let apiKey = "b3388014b013fd3aot7828a2bfbfecfe";
@@ -19,7 +19,7 @@ export default function WeatherForecast(props) {
       <div className="row">
         <div className="col">
           <div className="WeatherForecast-day">Thurs</div>
-          <WeatherIcon code="01d" size={36} />
+          <WeatherIcon code="clear-sky-day" size={36} />
           <div classname="WeatherForecast-temperatures">
             <span className="WeatherForecast-temperature-max">19°</span>
             <span className="WeatherForecast-temperature-min">10°</span>
