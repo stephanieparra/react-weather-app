@@ -20,16 +20,15 @@ export default function WeatherForecast(props) {
             if (index < 5) {
               return (
                 <div className="col" key={index}>
-                  <WeatherForecastDay data={forecast} />
+                  <WeatherForecastDay data={dailyForecast} />
                 </div>
               );
             }
+            return null;
           })}
         </div>
       </div>
     );
-
-    return null;
   } else {
     let apiKey = "fbef01f4et1b02o0d25c27210a43ef3f";
     let longitude = props.coordinates.longitude;
