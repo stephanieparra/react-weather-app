@@ -14,7 +14,7 @@ export default function SearchEngine(props) {
       coordinates: response.data.coordinates,
       city: response.data.city,
       temperature: response.data.temperature.current,
-      date: new Date(response.data.dt * 1000),
+      date: new Date(response.data.time * 1000),
       wind: response.data.wind.speed,
       humidity: response.data.temperature.humidity,
       icon: response.data.condition.icon,
@@ -34,7 +34,7 @@ export default function SearchEngine(props) {
   function search() {
     const apiKey = "b3388014b013fd3aot7828a2bfbfecfe";
     const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-    
+
     axios.get(apiUrl).then(handleResponse);
   }
 
