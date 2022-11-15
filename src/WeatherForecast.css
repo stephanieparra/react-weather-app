@@ -1,5 +1,7 @@
 .WeatherForecast {
   text-align: center;
+  color: #C9EAF4;
+  font-family: 'Space Mono', monospace;
 }
 
 .WeatherForecast-temperature-min {

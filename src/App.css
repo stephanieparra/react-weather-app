@@ -1,12 +1,12 @@
 .App {
   font-family: Roboto, arial, sans-serif;
-  border: 1px solid #151e3f;
-  background: #fafaef;
-  margin: 30px auto;
-  max-width: 800px;
+  border: 1px solid #444486;
+  background: #444486;
+  margin: 66px auto;
+  max-width: 480px;
   padding: 16px;
   border-radius: 4px;
-  box-shadow: 5px 5px #dc9e82;
+  box-shadow: 5px 5px #fac69e;
 }
 
 .App form {
@@ -18,34 +18,38 @@
   margin-top: 30px;
 }
 
-.App .col-3 {
+.btn btn-primary {
   margin-top: 30px;
 }
 
 .App h1 {
-  color: #151e3f;
+  color: #c9eaf4;
   font-size: 30px;
+  font-family: "Space Mono", monospace;
   font-weight: 100;
-  line-height: 75px;
+  line-height: 60px;
   margin: 0 0 8px 0;
 }
 
 .App ul {
-  margin: 0;
-  padding: 0;
+  margin-bottom: 35px;
+  padding-left: 0px;
+  font-family: "Space Mono", monospace;
 }
 
 .App li {
   font-size: 20px;
   font-weight: 100px;
-  line-height: 50px;
+  line-height: 30px;
   list-style: none;
-  color: #151e3f;
+  color: #c9eaf4;
 }
 
 footer {
   color: #151e3f;
   text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: 13px;
 }
 
 .App canvas {
@@ -55,16 +59,19 @@ footer {
 
 .App .temperature {
   font-size: 64px;
-  color: #151e3f;
+  font-family: "Space Mono", monospace;
+  color: #c9eaf4;
   line-height: 64px;
-  margin-left: 0px;
+  margin-left: 15px;
 }
 
 .App .unit {
   font-size: 16px;
   font-weight: 400;
+  font-family: "Space Mono", monospace;
   position: relative;
   top: -34px;
   line-height: 1;
   margin-left: 5px;
+  color: #c9eaf4;
 }
