@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./WeatherForecast.css";
 import WeatherForecastDay from "./WeatherForecastDay";
 import axios from "axios";
-import { cleanup } from "@testing-library/react";
 
 export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
@@ -28,8 +27,9 @@ export default function WeatherForecast(props) {
                   <WeatherForecastDay data={dailyForecast} />
                 </div>
               );
+            } else {
+              return null;
             }
-            return null;
           })}
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function WeatherForecast(props) {
     let apiKey = "fbef01f4et1b02o0d25c27210a43ef3f";
     let longitude = props.coordinates.longitude;
     let latitude = props.coordinates.latitude;
-    let apiUrlForecast = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
+    let apiUrlForecast = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=imperial`;
 
     axios.get(apiUrlForecast).then(handleResponse);
 

@@ -16,7 +16,7 @@ export default function App() {
         <a
           href="https://optimistic-torvalds-560c7b.netlify.app"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           Stephanie Parra
         </a>{" "}
@@ -24,7 +24,7 @@ export default function App() {
         <a
           href="https://github.com/stephanieparra/react-weather-app"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           open-sourced.
         </a>
