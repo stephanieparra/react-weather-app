@@ -53,11 +53,7 @@ export default function SearchEngine(props) {
               />
             </div>
             <div className="col-6">
-              <input
-                type="submit"
-                value="Search"
-                className="btn btn-primary"
-              />
+              <input type="submit" value="Search" className="btn btn-primary" />
             </div>
           </div>
         </form>
