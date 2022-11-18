@@ -12,7 +12,7 @@ export default function App() {
       </div>
 
       <footer>
-        City Pop-Inspired Weather App
+        City Pop-Inspired Weather App 🎵
         <br />
         Coded by{" "}
         <a
