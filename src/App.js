@@ -12,7 +12,9 @@ export default function App() {
       </div>
 
       <footer>
-        This project was coded by{" "}
+        City Pop-Inspired Weather App
+        <br />
+        Coded by{" "}
         <a
           href="https://optimistic-torvalds-560c7b.netlify.app"
           target="_blank"
@@ -20,13 +22,13 @@ export default function App() {
         >
           Stephanie Parra
         </a>{" "}
-        and is{" "}
+        •
         <a
           href="https://github.com/stephanieparra/react-weather-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          open-sourced.
+          Open-sourced
         </a>
       </footer>
     </>
