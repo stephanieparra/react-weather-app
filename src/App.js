@@ -22,7 +22,7 @@ export default function App() {
         >
           Stephanie Parra
         </a>{" "}
-        •
+        •{" "}
         <a
           href="https://github.com/stephanieparra/react-weather-app"
           target="_blank"
