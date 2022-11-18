@@ -2,11 +2,10 @@
   font-family: Roboto, arial, sans-serif;
   border: 1px solid #444486;
   background: #444486;
-  margin: 66px auto;
+  margin: 100px auto 18px auto;
   max-width: 480px;
   padding: 16px;
   border-radius: 4px;
-  box-shadow: 5px 5px #fac69e;
 }
 
 .App form {
@@ -24,8 +23,8 @@
 
 .App h1 {
   color: #c9eaf4;
-  font-size: 30px;
-  font-family: "Space Mono", monospace;
+  font-size: 25px;
+  font-family: "Press Start 2P", cursive;
   font-weight: 100;
   line-height: 60px;
   margin: 0 0 8px 0;
