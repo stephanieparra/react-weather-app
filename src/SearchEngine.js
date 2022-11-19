@@ -10,7 +10,7 @@ import "./App.css";
 export default function SearchEngine(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready: false });
-  const element = <FontAwesomeIcon icon={faEnvelope} />
+  
 
 
   function handleResponse(response) {
@@ -45,7 +45,7 @@ export default function SearchEngine(props) {
 
   function geolocation(position) {
   let apiKey = "fbef01f4et1b02o0d25c27210a43ef3f";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=imperial`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${position.coordinates.longitude}&lat=${position.coordinates.latitude}&key=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(handleResponse);
 
   function getCurrentLocation(event) {
@@ -74,7 +74,7 @@ export default function SearchEngine(props) {
                 <button className="geolocation">
                   <FontAwesomeIcon
                     icon={faMapMarkerAlt}
-                    onClick={geolocation}
+                    onClick={getCurrentLocation}
                   />
                 </button>
               </div>
