@@ -38,17 +38,6 @@ export default function SearchEngine(props) {
     const apiKey = "b3388014b013fd3aot7828a2bfbfecfe";
     const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
 
-
-  function geolocation(props) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  }
-
-  function showPosition(props) {
-    let lat = props.coordinates.latitude;
-    let lon = props.coordinates.longitude;
-    let apiKey = "b3388014b013fd3aot7828a2bfbfecfe";
-    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=imperial`;
-
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -69,14 +58,6 @@ export default function SearchEngine(props) {
               </div>
               <div className="col-2">
                 <input type="submit" value="Go" className="btn btn-primary" />
-              </div>
-              <div className="col-2">
-                <button className="geolocation">
-                  <FontAwesomeIcon
-                    icon={faMapMarkerAlt}
-                    onClick={geolocation}
-                  />
-                </button>
               </div>
             </div>
           </div>
