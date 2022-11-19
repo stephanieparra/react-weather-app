@@ -43,25 +43,27 @@ export default function SearchEngine(props) {
     return (
       <div className="Weather">
         <form onSubmit={handleSubmit}>
-          <div className="row">
-            <div className="col-8">
-              <input
-                type="search"
-                placeholder="Enter a city..."
-                className="form-control"
-                autoFocus="on"
-                onChange={handleCityChange}
-              />
-            </div>
-            <div className="col-2">
-              <input
-                type="submit"
-                value="Let's Go!"
-                className="btn btn-primary"
-              />
-            </div>
-            <div className="col-2">
-              <button className="geolocation"></button>
+          <div className="container">
+            <div className="row">
+              <div className="col-6">
+                <input
+                  type="search"
+                  placeholder="Search for a city..."
+                  className="form-control"
+                  autoFocus="on"
+                  onChange={handleCityChange}
+                />
+              </div>
+              <div className="col-4">
+                <input
+                  type="submit"
+                  value="Let's Go!"
+                  className="btn btn-primary"
+                />
+              </div>
+              <div className="col-2">
+                <button className="geolocation"></button>
+              </div>
             </div>
           </div>
         </form>
