@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
-import listencitypop from "./listencitypop.png";
 import axios from "axios";
 import "./App.css";
 
@@ -55,11 +54,7 @@ export default function SearchEngine(props) {
                 />
               </div>
               <div className="col-4">
-                <input
-                  type="submit"
-                  value="Let's Go!"
-                  className="btn btn-primary"
-                />
+                <input type="submit" value="Go" className="btn btn-primary" />
               </div>
               <div className="col-2">
                 <button className="geolocation"></button>
