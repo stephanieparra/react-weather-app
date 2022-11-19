@@ -3,7 +3,7 @@
   border: 1px solid #444486;
   background: #444486;
   margin: 100px auto 18px auto;
-  max-width: 480px;
+  max-width: 578px;
   padding: 16px;
   border-radius: 4px;
 }
@@ -74,3 +74,8 @@ footer {
   margin-left: 5px;
   color: #c9eaf4;
 }
+
+.col-7 {
+  padding-left: 65px;
+}
+

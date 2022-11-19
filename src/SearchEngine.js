@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
+import listencitypop from "./listencitypop.png";
 import axios from "axios";
 import "./App.css";
 
@@ -43,17 +44,24 @@ export default function SearchEngine(props) {
       <div className="Weather">
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <div className="col-6">
+            <div className="col-8">
               <input
                 type="search"
                 placeholder="Enter a city..."
-                className="form-control w-100"
+                className="form-control"
                 autoFocus="on"
                 onChange={handleCityChange}
               />
             </div>
-            <div className="col-6">
-              <input type="submit" value="Search" className="btn btn-primary" />
+            <div className="col-2">
+              <input
+                type="submit"
+                value="Let's Go!"
+                className="btn btn-primary"
+              />
+            </div>
+            <div className="col-2">
+              <button className="geolocation"></button>
             </div>
           </div>
         </form>
