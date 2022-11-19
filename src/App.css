@@ -13,11 +13,14 @@
 }
 
 .App input.form-control {
-  width: 75%;
   margin-top: 30px;
 }
 
 .btn-primary {
+  margin-top: 30px;
+}
+
+.geolocation {
   margin-top: 30px;
 }
 
@@ -78,4 +81,3 @@ footer {
 .col-8 {
   padding-left: 65px;
 }
-
