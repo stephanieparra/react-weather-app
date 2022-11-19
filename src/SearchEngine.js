@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
 import axios from "axios";
 import "./App.css";
@@ -8,6 +10,8 @@ import "./App.css";
 export default function SearchEngine(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready: false });
+  const element = <FontAwesomeIcon icon={faEnvelope} />
+
 
   function handleResponse(response) {
     setWeatherData({
@@ -39,6 +43,15 @@ export default function SearchEngine(props) {
     axios.get(apiUrl).then(handleResponse);
   }
 
+  function geolocation(position) {
+  let apiKey = "fbef01f4et1b02o0d25c27210a43ef3f";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(handleResponse);
+
+  function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(geolocation);
+
   if (weatherData.ready) {
     return (
       <div className="Weather">
@@ -57,6 +70,14 @@ export default function SearchEngine(props) {
               <div className="col-2">
                 <input type="submit" value="Go" className="btn btn-primary" />
               </div>
+              <div className="col-2">
+                <button className="geolocation">
+                  <FontAwesomeIcon
+                    icon={faMapMarkerAlt}
+                    onClick={geolocation}
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </form>
@@ -68,4 +89,4 @@ export default function SearchEngine(props) {
     search();
     return null;
   }
-}
+  }
