@@ -70,7 +70,7 @@ export default function SearchEngine(props) {
                 />
               </div>
               <div className="col-2">
-                <input type="submit" value="Go" className="btn btn-primary" />
+                <input type="submit" value="Search" className="btn btn-primary" />
               </div>
               <div className="col-2">
                 <button className="geolocation">
