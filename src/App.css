@@ -15,13 +15,23 @@
 .App input.form-control {
   margin-top: 30px;
   font-family: "Space Mono", monospace;
+  border-color: #444486;
 }
 
 .btn-primary {
   margin-top: 30px;
   font-family: "Space Mono", monospace;
+  font-weight: bold;
   background-color: #c9eaf4;
-  color: #444486;
+  color: #2e5994;
+  border-color: #c9eaf4;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #2e5994;
+  color: #c9eaf4;
+  border: #2e5994;
 }
 
 .geolocation {
@@ -29,9 +39,18 @@
   margin-left: 20px;
   padding: 4px 10px 4px 10px;
   border-radius: 4px;
-  border-color: blue;
+  border-color: #c9eaf4;
   background-color: #c9eaf4;
-  color: black;
+  color: #2e5994;
+  border: none;
+  width: 38px;
+  height: 38px;
+}
+
+.geolocation:hover {
+  background-color: #2e5994;
+  color: #c9eaf4;
+  border: #2e5994;
 }
 
 .App h1 {
@@ -65,6 +84,7 @@ footer {
 }
 
 .App canvas {
+  margin-top: 7px;
   margin-right: 0px;
   display: inline-block;
 }

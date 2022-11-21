@@ -64,7 +64,7 @@ export default function SearchEngine(props) {
                 <input
                   type="search"
                   placeholder="Search for a city..."
-                  className="form-control"
+                  className="form-control border-0"
                   autoFocus="on"
                   onChange={handleCityChange}
                 />
