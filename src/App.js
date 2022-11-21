@@ -1,6 +1,6 @@
 import React from "react";
 import SearchEngine from "./SearchEngine";
-import Spotify from "react-spotify-embed";
+
 import "./App.css";
 
 export default function App() {
@@ -11,9 +11,7 @@ export default function App() {
           <SearchEngine defaultCity="Los Angeles" />
         </div>
       </div>
-      <div className="playlist">
-        <Spotify link="https://open.spotify.com/playlist/0L7F6yo5BKXZZ22JjukP7f?si=888304f6b0364894" />
-      </div>
+      
       <footer>
         Vaporwave City Pop-Inspired Weather App 🎵
         <br />

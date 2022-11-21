@@ -1,8 +1,8 @@
 .App {
   font-family: Roboto, arial, sans-serif;
-  border: 1px solid #FF9E7A;
-  background: #FF9E7A;
-  margin: 100px auto 18px auto;
+  border: 1px solid #ff9e7a;
+  background: #ff9e7a;
+  margin: 75px auto 18px auto;
   max-width: 578px;
   padding: 16px;
   border-radius: 4px;
@@ -19,22 +19,22 @@
 .App input.form-control {
   margin-top: 30px;
   font-family: "Space Mono", monospace;
-  border-color: #FF9E7A;
+  border-color: #ff9e7a;
 }
 
 .btn-primary {
   margin-top: 30px;
   font-family: "Space Mono", monospace;
   font-weight: bold;
-  background-color: #EF529C;
+  background-color: #ef529c;
   color: #000;
-  border-color: #EF529C;
+  border-color: #ef529c;
   transition: 0.2s;
 }
 
 .btn-primary:hover {
   background-color: #000;
-  color: #EF529C;
+  color: #ef529c;
   border: #000;
 }
 
@@ -44,7 +44,7 @@
   padding: 4px 10px 4px 10px;
   border-radius: 4px;
   border-color: #c9eaf4;
-  background-color: #30DCE2;
+  background-color: #30dce2;
   color: #000;
   border: none;
   width: 38px;
@@ -53,10 +53,9 @@
 
 .geolocation:hover {
   background-color: #000;
-  color: #30DCE2;
+  color: #30dce2;
   border: #000;
 }
-
 
 .App h1 {
   color: #000;
@@ -83,6 +82,7 @@
 
 footer {
   color: #000;
+  background-color: #30dce2;
   text-align: center;
   font-family: "Space Mono", monospace;
   font-size: 13px;
@@ -114,7 +114,6 @@ footer {
 }
 
 iframe {
-  width: 500px;
-  height: 195px;
-  margin-left: 470px;
+  width: 505px;
+  height: 190px;
 }
