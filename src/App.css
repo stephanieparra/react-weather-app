@@ -1,7 +1,7 @@
 .App {
   font-family: Roboto, arial, sans-serif;
-  border: 1px solid #444486;
-  background: #444486;
+  border: 1px solid #FF9E7A;
+  background: #FF9E7A;
   margin: 100px auto 18px auto;
   max-width: 578px;
   padding: 16px;
@@ -12,26 +12,30 @@
   margin-bottom: 20px;
 }
 
+.col-8 {
+  padding-left: 0px;
+}
+
 .App input.form-control {
   margin-top: 30px;
   font-family: "Space Mono", monospace;
-  border-color: #444486;
+  border-color: #FF9E7A;
 }
 
 .btn-primary {
   margin-top: 30px;
   font-family: "Space Mono", monospace;
   font-weight: bold;
-  background-color: #c9eaf4;
-  color: #2e5994;
-  border-color: #c9eaf4;
+  background-color: #EF529C;
+  color: #000;
+  border-color: #EF529C;
   transition: 0.2s;
 }
 
 .btn-primary:hover {
-  background-color: #2e5994;
-  color: #c9eaf4;
-  border: #2e5994;
+  background-color: #000;
+  color: #EF529C;
+  border: #000;
 }
 
 .geolocation {
@@ -40,21 +44,22 @@
   padding: 4px 10px 4px 10px;
   border-radius: 4px;
   border-color: #c9eaf4;
-  background-color: #c9eaf4;
-  color: #2e5994;
+  background-color: #30DCE2;
+  color: #000;
   border: none;
   width: 38px;
   height: 38px;
 }
 
 .geolocation:hover {
-  background-color: #2e5994;
-  color: #c9eaf4;
-  border: #2e5994;
+  background-color: #000;
+  color: #30DCE2;
+  border: #000;
 }
 
+
 .App h1 {
-  color: #c9eaf4;
+  color: #000;
   font-size: 25px;
   font-family: "Press Start 2P", cursive;
   font-weight: 100;
@@ -73,11 +78,11 @@
   font-weight: 100px;
   line-height: 30px;
   list-style: none;
-  color: #c9eaf4;
+  color: #000;
 }
 
 footer {
-  color: #151e3f;
+  color: #000;
   text-align: center;
   font-family: "Space Mono", monospace;
   font-size: 13px;
@@ -92,7 +97,7 @@ footer {
 .App .temperature {
   font-size: 64px;
   font-family: "Space Mono", monospace;
-  color: #c9eaf4;
+  color: #000;
   line-height: 64px;
   margin-left: 15px;
 }
@@ -105,9 +110,11 @@ footer {
   top: -34px;
   line-height: 1;
   margin-left: 5px;
-  color: #c9eaf4;
+  color: #000;
 }
 
-.col-8 {
-  padding-left: 0px;
+iframe {
+  width: 500px;
+  height: 195px;
+  margin-left: 470px;
 }

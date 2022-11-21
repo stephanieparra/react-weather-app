@@ -4,6 +4,7 @@ import WeatherForecast from "./WeatherForecast";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
+
 import axios from "axios";
 import "./App.css";
 
@@ -70,7 +71,11 @@ export default function SearchEngine(props) {
                 />
               </div>
               <div className="col-2">
-                <input type="submit" value="Search" className="btn btn-primary" />
+                <input
+                  type="submit"
+                  value="Search"
+                  className="btn btn-primary"
+                />
               </div>
               <div className="col-2">
                 <button className="geolocation">
