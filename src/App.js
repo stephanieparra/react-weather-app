@@ -11,13 +11,13 @@ export default function App() {
           <SearchEngine defaultCity="Los Angeles" />
         </div>
       </div>
-      
+
       <footer>
         Vaporwave City Pop-Inspired Weather App 🎵
         <br />
         Coded by{" "}
         <a
-          href="https://optimistic-torvalds-560c7b.netlify.app"
+          href="https://stephanie-parra-portfolio.netlify.app"
           target="_blank"
           rel="noopener noreferrer"
         >
