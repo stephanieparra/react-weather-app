@@ -8,6 +8,7 @@
   padding: 16px;
   border-radius: 4px;
   box-sizing: border-box;
+  flex-grow: 1;
 }
 
 .App form {
