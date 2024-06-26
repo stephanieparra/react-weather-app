@@ -158,4 +158,30 @@ iframe {
   .geolocation {
     margin: auto;
   }
+
+  .WeatherInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .WeatherInfo .row {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .WeatherInfo .col-6 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .col-6 .ul .li {
+    
+  }
+
+  .d-flex {
+    margin-left: 35px;
+  }
 }
