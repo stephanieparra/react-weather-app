@@ -89,7 +89,8 @@ export default function SearchEngine(props) {
           </div>
         </form>
         <div className="playlist">
-          <Spotify link="https://open.spotify.com/playlist/0L7F6yo5BKXZZ22JjukP7f?si=e8937eecc5b240d3" />
+          <Spotify
+            link="https://open.spotify.com/playlist/0L7F6yo5BKXZZ22JjukP7f?si=e8937eecc5b240d3" />
         </div>
         <WeatherInfo data={weatherData} />
         <WeatherForecast coordinates={weatherData.coordinates} />

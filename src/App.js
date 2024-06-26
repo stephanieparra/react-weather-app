@@ -11,7 +11,6 @@ export default function App() {
           <SearchEngine defaultCity="Los Angeles" />
         </div>
       </div>
-
       <footer>
         Vaporwave City Pop-Inspired Weather App 🎵
         <br />
