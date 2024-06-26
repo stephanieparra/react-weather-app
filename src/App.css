@@ -81,6 +81,7 @@
   line-height: 30px;
   list-style: none;
   color: #000;
+  margin-top: 15px;
 }
 
 footer {
@@ -178,7 +179,6 @@ iframe {
   }
 
   .col-6 .ul .li {
-    
   }
 
   .d-flex {
