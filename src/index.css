@@ -3,4 +3,5 @@ body {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/208/original/vaporwave-clouds-music.png?1717541566");
   background-repeat: no-repeat;
   background-color: #c9eaf4;
+  background-size: cover;
 }
