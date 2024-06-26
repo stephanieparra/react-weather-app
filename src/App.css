@@ -121,3 +121,13 @@ iframe {
   max-width: 100%;
   border: none;
 }
+
+/* Media Queries */
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+  .App {
+    padding: 16px 10px;
+    margin: 20px;
+  }
+}
