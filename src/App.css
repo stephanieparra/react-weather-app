@@ -178,10 +178,75 @@ iframe {
     margin-bottom: 10px;
   }
 
-  .col-6 .ul .li {
+  .d-flex {
+    margin-left: 35px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .App {
+    margin: 75px auto 18px auto;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #5da9bd;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .col-8,
+  .col-2 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .btn-primary,
+  .geolocation {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .geolocation {
+    margin: auto;
+  }
+
+  .WeatherInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .WeatherInfo .row {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .WeatherInfo .col-6 {
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .d-flex {
-    margin-left: 35px;
+    margin-left: 50px;
   }
 }
