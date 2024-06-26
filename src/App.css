@@ -249,4 +249,8 @@ iframe {
   .d-flex {
     margin-left: 50px;
   }
+
+  .WeatherForecast-temperatures {
+    margin-bottom: 45px;
+  }
 }
