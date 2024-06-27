@@ -64,11 +64,12 @@ export default function SearchEngine(props) {
               <div className="col-8">
                 <input
                   type="search"
-                  placeholder="Search for a city..."
+                  placeholder="Los Angeles"
                   className="form-control border-0"
                   autoFocus="on"
                   onChange={handleCityChange}
                 />
+                <p class="search-label">Search for a city...</p>
               </div>
               <div className="col-2">
                 <input
@@ -89,8 +90,7 @@ export default function SearchEngine(props) {
           </div>
         </form>
         <div className="playlist">
-          <Spotify
-            link="https://open.spotify.com/playlist/0L7F6yo5BKXZZ22JjukP7f?si=e8937eecc5b240d3" />
+          <Spotify link="https://open.spotify.com/playlist/0L7F6yo5BKXZZ22JjukP7f?si=e8937eecc5b240d3" />
         </div>
         <WeatherInfo data={weatherData} />
         <WeatherForecast coordinates={weatherData.coordinates} />

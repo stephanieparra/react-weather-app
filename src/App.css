@@ -60,6 +60,11 @@
   border: #000;
 }
 
+.search-label {
+  margin-top: 10px;
+  font-family: "Space Mono", monospace;
+}
+
 .App h1 {
   color: #000;
   font-size: 25px;
