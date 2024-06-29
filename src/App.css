@@ -330,6 +330,10 @@ iframe {
     margin-left: 50px;
   }
 
+  .WeatherForecast .row {
+    margin-left: 10px;
+  }
+
   .WeatherForecast-temperatures {
     margin-bottom: 45px;
   }
