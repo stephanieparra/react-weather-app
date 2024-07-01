@@ -193,6 +193,8 @@ iframe {
 @media (min-width: 820px) and (max-width: 1180px) {
   .App {
     margin: 75px auto 18px auto;
+    max-width: 800px;
+    width: 90%;
   }
 
   .footer {
@@ -241,10 +243,10 @@ iframe {
     text-align: center;
   }
 
-  .WeatherInfo .row {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  .WeatherForecast .row {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap onto new lines if they exceed width */
+    justify-content: space-around;
   }
 
   .WeatherInfo .col-6 {
@@ -256,10 +258,6 @@ iframe {
     margin-left: 50px;
   }
 
-  .WeatherForecast .row {
-    margin-left: 10px;
-  }
-
   .WeatherForecast-temperatures {
     margin-bottom: 45px;
   }
@@ -267,6 +265,8 @@ iframe {
 @media (min-width: 1024px) and (max-width: 1366px) {
   .App {
     margin: 75px auto 18px auto;
+    width: 80%;
+    max-width: 1200px;
   }
 
   .footer {
