@@ -190,158 +190,144 @@ iframe {
 
 /* Tablets */
 
-@media (min-width: 820px) and (max-width: 1180px) {
+/* Common styles for both iPad Air and iPad Pro */
+.App {
+  margin: 75px auto 18px auto;
+  max-width: 1200px;
+  width: 90%;
+  max-height: 100%;
+  padding-bottom: 20px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #5da9bd;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.col-8,
+.col-2 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.btn-primary,
+.geolocation {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.geolocation {
+  margin: auto;
+}
+
+.WeatherInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.WeatherInfo .col-6 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.d-flex {
+  margin-left: 50px;
+}
+
+.WeatherForecast-temperatures {
+  margin-bottom: 45px;
+}
+
+/* Specific styles for iPad Air */
+@media (min-width: 820px) and (max-width: 1023px) {
   .App {
-    margin: 75px auto 18px auto;
-    max-width: 1200px;
-    width: 90%;
-    height: 90vh;
-    max-height: 100%;
-    padding-bottom: 20px;
-  }
-
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #5da9bd;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-  }
-
-  .row {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .col-8,
-  .col-2 {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .btn-primary,
-  .geolocation {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .geolocation {
-    margin: auto;
-  }
-
-  .WeatherInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    width: 95%;
   }
 
   .WeatherForecast {
-    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .row {
+    margin-bottom: -32px;
   }
 
   .WeatherForecast .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 20px;
-  }
-
-  .WeatherInfo .col-6 {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .d-flex {
-    margin-left: 50px;
-  }
-
-  .WeatherForecast-temperatures {
-    margin-bottom: 45px;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1366px) {
-  .App {
-    margin: 75px auto 18px auto;
-    width: 80%;
-    max-width: 1200px;
-    height: 80vh;
-    max-height: 100%;
-  }
-
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #5da9bd;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .row {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .col-8,
-  .col-2 {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .btn-primary,
-  .geolocation {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .geolocation {
-    margin: auto;
+    margin: 0;
   }
 
   .WeatherInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 10px;
   }
 
-  .WeatherInfo .row {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  .WeatherInfo h1,
+  .WeatherInfo p,
+  .WeatherInfo .col-6 {
+    margin: 5px 0;
   }
 
   .WeatherInfo .col-6 {
-    width: 100%;
-    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+
+  .WeatherForecast-temperatures {
+    margin-bottom: 20px;
+  }
+}
+
+/* Specific styles for iPad Pro */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .App {
+    width: 80%;
+  }
+
+  .App form {
+    margin-bottom: 48px;
+  }
+
+  .App ul {
+    margin-top: 25px;
+  }
+
+  .App h1 {
+    margin-top: 25px;
+  }
+
+  .row {
+    margin-top: 85px;
   }
 
   .d-flex {
     margin: 100px;
   }
 
-  WeatherForecast {
+  .WeatherForecast {
     display: flex;
     flex-direction: nowrap;
     width: 100%;
@@ -352,10 +338,5 @@ iframe {
     flex-wrap: nowrap;
     justify-content: space-around;
     width: 100%;
-    margin-left: 0;
-  }
-
-  .WeatherForecast-temperatures {
-    margin-bottom: 45px;
   }
 }
