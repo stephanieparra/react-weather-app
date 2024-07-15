@@ -89,14 +89,6 @@
   margin-top: 15px;
 }
 
-footer {
-  color: #000;
-  background-color: #5da9bd;
-  text-align: center;
-  font-family: "Space Mono", monospace;
-  font-size: 13px;
-}
-
 .App canvas {
   margin-top: 7px;
   margin-right: 0px;
@@ -127,6 +119,14 @@ iframe {
   height: 190px;
   max-width: 100%;
   border: none;
+}
+
+footer {
+  color: #000;
+  background-color: #5da9bd;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: 13px;
 }
 
 /* Media Queries */
@@ -185,6 +185,10 @@ iframe {
 
   .d-flex {
     margin-left: 35px;
+  }
+
+  .WeatherForecast {
+    margin-left: 40px;
   }
 }
 

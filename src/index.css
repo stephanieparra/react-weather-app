@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-color: #c9eaf4;
   background-size: cover;
-  min-height: 100vh;
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
 }
