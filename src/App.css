@@ -8,7 +8,9 @@
   padding: 16px;
   border-radius: 4px;
   box-sizing: border-box;
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App form {
@@ -186,81 +188,80 @@ footer {
   .d-flex {
     margin-left: 35px;
   }
-
-  .WeatherForecast {
-    margin-left: 40px;
-  }
 }
 
 /* Tablets */
 
 /* Common styles for both iPad Air and iPad Pro */
-.App {
-  margin: 75px auto 18px auto;
-  max-width: 1200px;
-  width: 90%;
-  max-height: 100%;
-  padding-bottom: 20px;
-}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .App {
+    margin: 75px auto 18px auto;
+    max-width: 1200px;
+    width: 90%;
+    max-height: 100%;
+    padding-bottom: 20px;
+    flex-direction: column;
+  }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #5da9bd;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-}
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #5da9bd;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-}
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
 
-.row {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
+  .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
-.col-8,
-.col-2 {
-  width: 100%;
-  margin-bottom: 10px;
-}
+  .col-8,
+  .col-2 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 
-.btn-primary,
-.geolocation {
-  width: 100%;
-  margin-top: 10px;
-}
+  .btn-primary,
+  .geolocation {
+    width: 100%;
+    margin-top: 10px;
+  }
 
-.geolocation {
-  margin: auto;
-}
+  .geolocation {
+    margin: auto;
+  }
 
-.WeatherInfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+  .WeatherInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-.WeatherInfo .col-6 {
-  width: 100%;
-  margin-bottom: 10px;
-}
+  .WeatherInfo .col-6 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 
-.d-flex {
-  margin-left: 50px;
-}
+  .d-flex {
+    margin-left: 50px;
+  }
 
-.WeatherForecast-temperatures {
-  margin-bottom: 45px;
+  .WeatherForecast-temperatures {
+    margin-bottom: 45px;
+  }
 }
 
 /* Specific styles for iPad Air */
@@ -342,5 +343,13 @@ footer {
     flex-wrap: nowrap;
     justify-content: space-around;
     width: 100%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .App {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
