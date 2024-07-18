@@ -195,8 +195,7 @@ footer {
 /* Common styles for both iPad Air and iPad Pro */
 @media (min-width: 768px) and (max-width: 1023px) {
   .App {
-    padding-bottom: 20px;
-    flex-direction: column;
+    
     margin: 0 auto;
   }
 
@@ -269,8 +268,7 @@ footer {
 
   .container {
     display: flex;
-    justify-content: center;
-    align-items: center
+    align-items: center;
   }
 
   .WeatherForecast {
@@ -315,7 +313,7 @@ footer {
 /* Specific styles for iPad Pro */
 @media (min-width: 1024px) and (max-width: 1366px) {
   .App {
-    width: 80%;
+    display: flex;
   }
 
   .App form {
@@ -345,10 +343,8 @@ footer {
   }
 
   .WeatherForecast .row {
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    width: 100%;
   }
 }
 
