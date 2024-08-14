@@ -222,7 +222,7 @@ footer {
 
   .col-8,
   .col-2 {
-    width: 100%;
+    width: 100;
     margin-bottom: 10px;
   }
 
@@ -263,9 +263,20 @@ footer {
     margin: 0 auto;
   }
 
-  .container {
+  .container, .row {
+    width: 100%;
     display: flex;
     align-items: center;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .btn-primary {
+    width: 100%;
+    display: block;
+    text-align: center;
   }
 
   .WeatherForecast {
@@ -277,7 +288,15 @@ footer {
     width: 100%;
   }
 
+
+
   .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     margin-bottom: -32px;
   }
 
@@ -326,6 +345,12 @@ footer {
   }
 
   .row {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     align-items: center;
     margin-top: 85px;
   }
