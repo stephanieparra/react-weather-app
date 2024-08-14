@@ -222,7 +222,7 @@ footer {
 
   .col-8,
   .col-2 {
-    width: 100;
+    width: 100%;
     margin-bottom: 10px;
   }
 
@@ -233,8 +233,13 @@ footer {
   }
 
   .geolocation {
-    margin: auto;
+    width: 100%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block; 
+    text-align: center;
   }
+  
 
   .WeatherInfo {
     display: flex;
@@ -263,10 +268,12 @@ footer {
     margin: 0 auto;
   }
 
-  .container, .row {
-    width: 100%;
+  .container,
+  .row {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   form {
@@ -287,8 +294,6 @@ footer {
     justify-content: center;
     width: 100%;
   }
-
-
 
   .row {
     display: flex;
@@ -323,6 +328,12 @@ footer {
 
   .WeatherForecast-temperatures {
     margin-bottom: 20px;
+  }
+
+  .col-8,
+  .col-2 {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 
@@ -369,6 +380,26 @@ footer {
   .WeatherForecast .row {
     flex-wrap: nowrap;
     justify-content: space-around;
+  }
+
+  .WeatherInfo .col-6 {
+    display: flex;
+
+    justify-content: center;
+  }
+
+  .col-8,
+  .col-2 {
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-primary {
+    width: 100%;
+    display: block;
+    text-align: center;
   }
 }
 
